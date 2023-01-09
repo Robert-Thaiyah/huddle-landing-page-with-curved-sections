@@ -36,7 +36,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Github Repo](https://github.com/Robert-Thaiyah/huddle-landing-page-with-curved-sections)
-- Live Site URL: [Livesite URL](https://your-live-site-url.com)
+- Live Site URL: [Livesite URL](https://robert-thaiyah.github.io/huddle-landing-page-with-curved-sections/)
 
 ## My process
 
