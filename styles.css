@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins&display=swap');
+
+
+:root{
+    --pink: hsl(322, 100%, 66%);
+    --light-pink:hsl(321, 100%, 78%);
+    --light-red:hsl(0, 100%, 63%);
+    --very-dark-cyan:hsl(192, 100%, 9%);
+    --very-pale-blue:hsl(207, 100%, 98%);
+}
+
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    background-color: hsl(207, 100%, 94%);
+    line-height: 1.9;
+}
+
+h1, h2, h3, h4{
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* header */
+
+.header .container{
+    justify-content: space-between;
+}
+
+.header .btn:hover{
+    background: white;
+    color: var(--pink);
+    border: var(--pink) solid 1px;
+}
+/* hero area */
+.hero-area .container{
+    flex-direction: column;
+    text-align: center;
+}
+
+.hero-area img{
+    width: 80%;
+    justify-content: center;
+}
+
+.hero-area .btn{
+    padding: 20px 70px;
+    border-radius: 40px;
+    margin-top: 20px; 
+}
+/* statistics */
+
+.statistics .container{
+    justify-content: space-around;
+    height: 500px;
+}
+
+.statistics{
+    background: url(./images/bg-section-top-desktop-1.svg) no-repeat bottom;
+    background-size: contain;
+}
+
+/* grow */
+
+.grow{
+background-color: var(--very-pale-blue);
+}
+.grow img{
+    width: 100%;
+}
+
+/* flowing conversations */
+.conversation{
+    background: url(./images/bg-section-bottom-desktop-1.svg) no-repeat top, url(./images/bg-section-top-desktop-2.svg) no-repeat bottom;
+    background-size: contain;
+}
+
+.conversation .container{
+    height: 1000px;
+}
+.conversation img{
+    width: 100%;
+}
+
+/* your users */
+
+.users{
+    background-color: var(--very-pale-blue);
+}
+.users img{
+    width: 100%;
+}
+
+/* ready to build? */
+
+.build{
+    background-image: url(./images/bg-footer-top-desktop.svg), url(./images/bg-section-bottom-desktop-2.svg);
+    background-position: bottom center, top center;
+    background-repeat: no-repeat no-repeat;
+    background-size: contain;
+}
+.build .container{
+    height: 750px;
+    flex-direction: column; 
+}
+
+/* footer */
+
+.footer .logo {
+    filter: invert(93%) sepia(100%) saturate(29%) hue-rotate(42deg) brightness(104%) contrast(112%);
+}
+
+.footer .phone::before{
+    content: url(./images/icon-phone.svg);
+    margin-right: 15px;
+}
+
+.footer .email::before{
+    content: url(./images/icon-email.svg);
+    margin-right: 15px;
+}
+
+.footer .socials {
+    gap: 30px;
+    justify-content: start;
+}
+
+.fa-facebook:hover{
+    color: #1773EA;
+    transition: 0.2s ease-in;
+}
+.fa-twitter:hover{
+    color: #1C9CEA;
+    transition: 0.2s ease-in;
+}
+.fa-instagram:hover{
+    color: #B32E87;
+    transition: 0.2s ease-in;
+}
+
+form{
+    margin-top: 30px;
+}
+
+
+
+#email{
+    width: 220px;
+    height: 40px;
+    border-radius: 10px;
+    outline: none;
+    text-indent: 2em;
+}
+
+.show{
+    color: #FFB6C1;
+}
+
+.footer .btn {
+    border-radius: 10px;
+    padding: 5px 40px;
+}
+
+
+/* media queries */
+@media(max-width:768px){
+
+    img{
+        width: auto;
+    }
+
+    .grid
+    {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .conversation .flex{
+       flex-direction: column-reverse;
+    }
+    .flex
+    {
+        flex-direction: column;
+    }
+
+    .header .flex,
+    .footer .flex{
+       flex-direction: row;
+    }
+
+    h1, h2, h3{
+       text-align: center;
+    }
+    
+    p{
+       text-align: center;
+    }
+
+    .footer{
+        padding: 20px;
+    }
+
+    .footer p{
+        text-align: left;
+    }
+
+    .footer .contacts{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer .newsletter {
+      display: grid;
+    }
+
+    form{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer .btn{
+        width: 50%;
+        position: relative;
+        translate: 100% 20%;
+    }
+
+    .footer .show{
+        translate: 50% 20%; 
+    }
+
+    #email{
+        width: 100%;
+    }
+
+}
